@@ -18,7 +18,7 @@ jobs:
           node-version: 16.x
 
       - name: upload to s3 bucket
-        uses: noelware/s3-action@v1.2.0
+        uses: resource-network/s3-upload@v1.0.0
         with:
           directories: './directories;./to;./use'
           access-key: <aws s3 access key>
